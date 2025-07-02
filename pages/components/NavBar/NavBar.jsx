@@ -58,6 +58,16 @@ const NavBar = () => {
             setopenSideMenu(false);
         }
     };
+    const openProfile= () => {
+        if (!profile){
+            setdiscover(false);
+            sethelp(false);
+            setnotification(false);
+            setprofile(true); 
+        } else {
+            setprofile(false);
+        }
+    };
     return (<div className={Style.navbar}>
         <div className={Style.navbar_container}>
             <div className={Style.navbar_container_left}>
