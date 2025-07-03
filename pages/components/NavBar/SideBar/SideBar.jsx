@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import {GrCLose } from "react-icons/gr";
+import {GrClose } from "react-icons/gr";
 import { 
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -19,7 +19,7 @@ import images from "../../../img";
 import Button from "../Button/Button";
 
 
-const SideBar = ({setOpenSideMenu}) => {
+const SideBar = ({setopenSideMenu}) => {
   //----USESTATE
   const  [openDiscover, setOpenDiscover] = useState(false);
 
@@ -97,11 +97,11 @@ const SideBar = ({setOpenSideMenu}) => {
   };
 
   const closeSideBar = () => {
-    setOpenSideMenu(false);
+    setopenSideMenu(false);
   };
   return (
     <div className={Style.SideBar}>
-      <GrCLose
+      <GrClose
       className={Style.SideBar_closeBtn}
       onClick = {() => closeSideBar()}
       />
